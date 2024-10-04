@@ -1,9 +1,8 @@
-import MySQLdb
+import mysql.connector
 
-def get_db_connection():
-    return MySQLdb.connect(
-        host="localhost",
-        user="root",
-        passwd="password",
-        db="srm_portal"
-    )
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="password",
+    database="srm_portal"
+)
