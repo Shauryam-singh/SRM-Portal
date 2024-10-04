@@ -1,8 +1,9 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, flash
 import mysql.connector
 from mysql.connector import Error
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Required for flashing messages
 
 # Connect to MySQL Database
 db = mysql.connector.connect(
@@ -41,9 +42,10 @@ def login():
         print(f"User found: {user}")  # Debug output
         
         if user:
-            return "Login successful!"
+            return redirect(url_for('dashboard'))
         else:
-            return "Invalid username or password", 401
+            flash("Invalid username or password")  # Flash an error message
+            return redirect(url_for('index'))
 
     except Error as e:
         print(f"Error: {e}")
@@ -56,7 +58,7 @@ def login():
 
 @app.route('/dashboard')
 def dashboard():
-    return "Welcome to your dashboard!"
+    return render_template('dashboard.html')  # Make sure you have this template
 
 if __name__ == "__main__":
     app.run(debug=True)
