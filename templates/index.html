@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +36,6 @@
                                         <p>Student Portal</p>
                                     </div>
                                     <div class="card-body">
-                                        <!-- Updated form with action="/login" -->
                                         <form method="POST" action="/login" autocomplete="off" id="login_form" class="needs-validation" novalidate>
                                             <div class="form-group mb-3">
                                                 <label for="login">NetID (without '@srmist.edu.in')</label>
@@ -71,7 +69,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="https://sp.srmist.edu.in/srmiststudentportal/captchas" alt="Captcha" class="img-fluid">
+                                                        <img src="data:image/png;base64,{{ captcha_image }}" alt="Captcha" class="img-fluid">
                                                     </div>
                                                     <div class="col-2">
                                                         <button class="btn" type="button" onclick="funChangeCaptchas()"><i class="fa fa-recycle"></i></button>

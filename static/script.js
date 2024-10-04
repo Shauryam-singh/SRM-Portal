@@ -7,3 +7,6 @@ document.getElementById("login_form").onsubmit = function(e) {
         alert("Please fill in both fields.");
     }
 };
+function funChangeCaptchas() {
+    window.location.reload();
+}
