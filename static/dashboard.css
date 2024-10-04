@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.navbar{
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+.nav-fixed .topnav {
+    z-index: 999;
+}
+.topnav.navbar-light #sidebarToggle {
+    color: #212832;
+}
+.topnav.navbar-light .navbar-brand {
+    color: #363d47;
+}
+.topnav .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+.topnav .navbar-brand img {
+    height: 1.5rem;
+    vertical-align: middle;
+}
+.text-custom {
+    color: #337ab7 !important;
+}
+.navbar-expand .navbar-nav {
+    flex-direction: row;
+    margin-left: auto !important;
+    text-align: center !important;
+}
+#layoutSidenav {
+    display: flex;
+}
+.nav-fixed #layoutSidenav #layoutSidenav_nav {
+    width: 15rem;
+    height: 100vh;
+    z-index: 999;
+}
+.nav-fixed #layoutSidenav #layoutSidenav_nav {
+    width: 15rem;
+    height: 100vh;
+    z-index: 1038;
+}
+.nav-fixed #layoutSidenav #layoutSidenav_content {
+    padding-left: 15rem;
+    top: 3.625rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+.border-custom {
+    border-color: #337ab7 !important;
+}
+.bg-custom {
+    background-color: #337ab7 !important;
+}
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.35rem;
+}
+.imgPhoto {
+    border-radius: 50%;
+}
+.img-account-profile {
+    height: 10rem;
+}
+.font-weight-bold {
+    font-weight: 500 !important;
+}
